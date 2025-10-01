@@ -196,7 +196,7 @@ document
 
 
       // Send to API
-      const response = await fetch("https://api.bonurusmatovma.uz/api/dataflow2", {
+      const response = await fetch("https://jenskaya-alximiya.asosit.uz/api/dataflow2", {
         method: "POST",
         body: apiFormData,
       });
