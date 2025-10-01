@@ -64,11 +64,11 @@ payment__tariff.innerHTML = `
 // Har bir .pricesAll elementiga qiymat qo'yish
 payment__price.forEach((priceElement) => {
   if (localData.type === "standart") {
-    priceElement.innerHTML = "2 000 000 so'm";
-  } else if (localData.type === "premium") {
     priceElement.innerHTML = "2 300 000 so'm";
+  } else if (localData.type === "premium") {
+    priceElement.innerHTML = "2 500 000 so'm";
   } else {
-    priceElement.innerHTML = "5 000 000 so'm";
+    priceElement.innerHTML = "5 200 000 so'm";
   }
 });
 
@@ -105,11 +105,11 @@ async function updatePriceVisa() {
   let priceUZS;
 
   if (localData.type === "standart") {
-    priceUZS = 2000000;
-  } else if (localData.type === "premium") {
     priceUZS = 2300000;
+  } else if (localData.type === "premium") {
+    priceUZS = 2500000;
   } else {
-    priceUZS = 5000000;
+    priceUZS = 5200000;
   }
 
   const priceUSD = await convertUZStoUSD(priceUZS);
