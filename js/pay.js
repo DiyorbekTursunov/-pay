@@ -192,6 +192,7 @@ document
       apiFormData.append("phone_number", localData.phone_number.toString());
       apiFormData.append("payment_type", paymentType); // Fixed: Use paymentType instead of localData.type
       apiFormData.append("picture", file);
+      apiFormData.append("tarif", localData.type.toString());
       apiFormData.append("status", paymentForm.status.value);
 
 
